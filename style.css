@@ -1,0 +1,136 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+    margin: auto;
+    background-color: #ccccff;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+#title{
+    background-color: #e0ff00;
+    margin: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*誘導矢印*/
+
+#arrow {
+    margin-top: 70px;
+    padding: 30px 0;
+  }
+#arrow span {
+    position: absolute;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+/*ーーーーーーーーーーー*/
+
+#guImg{
+    background-color: #e01313;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 40%;
+}
+#chImg{
+    background-color: #e5ff00;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 40%;
+}
+#paImg{
+    background-color: #00e297;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 40%;
+}
+ul{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+li{
+    display: flex;
+    justify-content: center;
+}
+a{
+    display: flex;
+    justify-content: center;
+}
+.jkanser{
+    display: flex;
+    justify-content: center;
+}
+#nico{
+  overflow-x: hidden;
+  width: 200px;
+  font-size: 20px;
+}
+#count{
+  display: flex;
+  justify-content: center;
+  color: red;
+  background-color: #d2e068; 
+}
